@@ -5,7 +5,12 @@
   "scripts": {
     "build": "nest build",
     "start": "nest start --watch",
-    "start:debug": "nest start --debug --watch"
+    "start:debug": "nest start --debug --watch",
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:unit": "jest",
+    "test:unit-watch": "jest --watch",
+    "test:unit-coverage": "jest --coverage",
+    "test:e2e": "jest --config ./e2e/jest-e2e.config.ts"
   },
   "dependencies": {
     "@nestjs/common": "10.4.7",

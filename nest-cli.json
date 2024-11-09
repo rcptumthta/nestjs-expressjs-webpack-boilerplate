@@ -6,7 +6,7 @@
   "sourceRoot": "src",
   "entryFile": "main",
   "compilerOptions": {
-    "builder": "tsc",
+    "builder": "webpack",
     "deleteOutDir": true
   }
 }

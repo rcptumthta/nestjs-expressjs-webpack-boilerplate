@@ -1,0 +1,9 @@
+{
+  "name": "nestjs-expressjs-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for NestJS (ExpressJS) webpack",
+  "private": true,
+  "engines": {
+    "node": "^20"
+  }
+}

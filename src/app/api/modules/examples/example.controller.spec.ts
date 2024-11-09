@@ -14,7 +14,7 @@ describe("ExampleController", (): void => {
       })
       .compile();
 
-      controller = unit;
+    controller = unit;
   });
 
   it("Should be defined", (): void => {

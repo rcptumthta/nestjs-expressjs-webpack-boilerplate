@@ -26,10 +26,12 @@ describe("Example (E2E)", (): void => {
 
   describe("Success cases", (): void => {
     it("OK (200) ~ GET {/} > Should return 'Welcome to the NestJS (ExpressJS) Webpack Boilerplate'", (): supertest.Test => {
-      return supertest(application.getHttpServer()).get("/").expect((response: supertest.Response): void => {
-        expect(response.status).toBe(200);
-        expect(response.text).toBe("Welcome to the NestJS (ExpressJS) Webpack Boilerplate");
-      });
+      return supertest(application.getHttpServer())
+        .get("/")
+        .expect((response: supertest.Response): void => {
+          expect(response.status).toBe(200);
+          expect(response.text).toBe("Welcome to the NestJS (ExpressJS) Webpack Boilerplate");
+        });
     });
   });
 });

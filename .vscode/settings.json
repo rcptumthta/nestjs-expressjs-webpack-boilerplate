@@ -1,0 +1,10 @@
+{
+  "cSpell.customDictionaries": {
+    "dictionary-workspace": {
+      "name": "dictionary-workspace",
+      "path": "${workspaceFolder:nestjs-expressjs-webpack-boilerplate}/.cspell/dictionary-workspace.txt",
+      "addWords": true,
+      "scope": "workspace"
+    }
+  }
+}

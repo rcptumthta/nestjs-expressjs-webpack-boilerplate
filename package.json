@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Boilerplate for NestJS (ExpressJS) webpack",
   "scripts": {
+    "postinstall": "husky",
+    "precommit": "lint-staged",
+    "prepush": "npm run test",
     "lint": "eslint . --ext .js,.json,.json5,.jsonc,.jsonl,.ts",
     "lint:fix": "eslint . --ext .js,.json,.json5,.jsonc,.jsonl,.ts --fix",
     "build": "nest build",

@@ -1,4 +1,20 @@
 {
+  "[javascript][json][json5][jsonc][jsonl][typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "json",
+    "json5",
+    "jsonc",
+    "jsonl",
+    "typescript"
+  ],
   "cSpell.customDictionaries": {
     "dictionary-workspace": {
       "name": "dictionary-workspace",

@@ -1,0 +1,11 @@
+# - Dependencies (NodeJS) directory
+node_modules/*
+
+# - Build directory
+dist/*
+
+# - Test directory
+coverage/*
+
+# - JSON files
+package-lock.json

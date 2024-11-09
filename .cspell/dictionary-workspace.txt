@@ -1,7 +1,9 @@
 # Dictionary Words
 commitlint
 expressjs
+fnames
 nestjs
 precommit
 prepush
 sonarjs
+systemvars

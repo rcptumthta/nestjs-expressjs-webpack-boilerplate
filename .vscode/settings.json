@@ -6,5 +6,6 @@
       "addWords": true,
       "scope": "workspace"
     }
-  }
+  },
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }

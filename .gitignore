@@ -4,6 +4,9 @@ node_modules/*
 # - Build directory
 dist/*
 
+# - Test directory
+coverage/*
+
 # - Text Editor (Visual Studio Code) directory and files
 .vscode/*
 !.vscode/extensions.json

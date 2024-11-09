@@ -1,4 +1,5 @@
-import { resolve } from "node:path";
+import path from "node:path";
+
 import { JestConfigWithTsJest, pathsToModuleNameMapper } from "ts-jest";
 
 import { compilerOptions } from "../tsconfig.json";
@@ -11,7 +12,7 @@ const configuration: JestConfigWithTsJest = {
     "^.+\\.(t|j)s$": "ts-jest"
   },
   moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
-    prefix: resolve()
+    prefix: path.resolve()
   }),
   moduleFileExtensions: ["js", "json", "ts"]
 };

@@ -1,5 +1,7 @@
 # Dictionary Words
-
+commitlint
 expressjs
 nestjs
+precommit
+prepush
 sonarjs

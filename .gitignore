@@ -1,6 +1,9 @@
 # - Dependencies (NodeJS) directory
 node_modules/*
 
+# - Build directory
+dist/*
+
 # - Text Editor (Visual Studio Code) directory and files
 .vscode/*
 !.vscode/extensions.json

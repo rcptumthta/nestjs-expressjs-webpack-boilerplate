@@ -1,0 +1,6 @@
+# - Text Editor (Visual Studio Code) directory and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json

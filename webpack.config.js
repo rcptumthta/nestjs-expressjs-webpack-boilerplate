@@ -16,7 +16,7 @@ module.exports = function compile(option) {
       path: path.resolve(__dirname, "dist"),
       libraryTarget: "commonjs2"
     },
-    mode: process.env.NODE_ENV === "production" ? "production" : "development",
+    mode: ["development", "staging", "production"].includes(process.env.NODE_ENV) ? "production" : "development",
     target: "node",
     devtool: "source-map",
     optimization: {

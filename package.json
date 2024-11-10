@@ -2,18 +2,31 @@
   "name": "nestjs-expressjs-webpack-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate for NestJS (ExpressJS) webpack",
+  "author": {
+    "name": "Ratchapol Thongta",
+    "email": "rcptum.thta@outlook.com",
+    "url": "https://github.com/rcptumthta"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rcptumthta/nestjs-expressjs-webpack-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rcptumthta/nestjs-expressjs-webpack-boilerplate/issues"
+  },
   "scripts": {
     "postinstall": "husky",
     "precommit": "lint-staged",
     "prepush": "npm run test",
     "lint": "eslint . --ext .js,.json,.json5,.jsonc,.jsonl,.ts",
     "lint:fix": "eslint . --ext .js,.json,.json5,.jsonc,.jsonl,.ts --fix",
-    "build": "cross-env NODE_ENV=development nest build",
+    "build": "cross-env NODE_ENV=local nest build",
+    "build:development": "cross-env NODE_ENV=development nest build",
     "build:staging": "cross-env NODE_ENV=staging nest build",
     "build:production": "cross-env NODE_ENV=production nest build",
     "build:ci": "cross-env NODE_ENV=ci nest build",
-    "start": "cross-env NODE_ENV=development nest start --watch",
-    "start:debug": "cross-env NODE_ENV=development nest start --debug --watch",
+    "start": "cross-env NODE_ENV=local nest start --watch",
+    "start:debug": "cross-env NODE_ENV=local nest start --debug --watch",
     "test": "npm run test:unit && npm run test:e2e",
     "test:unit": "cross-env NODE_ENV=test jest",
     "test:unit-watch": "cross-env NODE_ENV=test jest --watch",
@@ -23,10 +36,12 @@
     "test:e2e-ci": "cross-env NODE_ENV=ci jest --config ./e2e/jest-e2e.config.ts"
   },
   "dependencies": {
+    "@dotenvx/dotenvx": "1.22.0",
     "@nestjs/common": "10.4.7",
     "@nestjs/core": "10.4.7",
     "@nestjs/platform-express": "10.4.7",
     "express": "4.21.1",
+    "joi": "17.13.3",
     "reflect-metadata": "0.1.14",
     "rxjs": "7.8.1"
   },

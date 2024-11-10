@@ -1,5 +1,6 @@
 # Dictionary Words
 commitlint
+dotenvx
 expressjs
 fnames
 nestjs

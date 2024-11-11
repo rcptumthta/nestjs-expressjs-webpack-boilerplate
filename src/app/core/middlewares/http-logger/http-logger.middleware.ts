@@ -6,7 +6,7 @@ import { NextFunction, Request, Response } from "express";
 
 @Injectable()
 export class HttpLoggerMiddleware implements NestMiddleware<Request, Response> {
-  private readonly logger: Logger = new Logger("HTTP");
+  private readonly _logger: Logger = new Logger("HTTP");
 
   public use(request: Request, response: Response, next: NextFunction): void {
     response.on("finish", (): void => {
@@ -21,11 +21,11 @@ export class HttpLoggerMiddleware implements NestMiddleware<Request, Response> {
       );
 
       if (request.statusCode >= 500) {
-        this.logger.error(message);
+        this._logger.error(message);
       } else if (request.statusCode >= 400) {
-        this.logger.warn(message);
+        this._logger.warn(message);
       } else {
-        this.logger.log(message);
+        this._logger.log(message);
       }
     });
 

@@ -7,6 +7,10 @@ dist/*
 # - Test directory
 coverage/*
 
+# - Log directory and files
+logs/*
+npm-debug.log*
+
 # - Text Editor (Visual Studio Code) directory and files
 .vscode/*
 !.vscode/extensions.json

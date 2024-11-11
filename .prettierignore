@@ -6,3 +6,6 @@ dist/*
 
 # - Test directory
 coverage/*
+
+# - Log directory
+logs/*
